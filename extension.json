@@ -1,0 +1,30 @@
+{
+	"name": "KickSecure",
+	"version": "0.1",
+	"author": "Zoran Dori",
+	"description": "Customization for the KickSecure wiki",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"AutoloadClasses": {
+		"Custom": "Custom.php"
+	},
+    "ResourceModules": {
+		"ext.backToTopButton": {
+            "scripts": [
+                "ext.backToTopButton.js"
+            ],
+			"styles": "ext.backToTopButton.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "KickSecure-Custom/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "Custom::onBeforePageDisplay"
+	},
+	"manifest_version": 2
+}
