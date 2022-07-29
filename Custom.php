@@ -7,5 +7,6 @@ class Custom {
      */
     public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
         $out->addModules( 'ext.backToTopButton' );
+        $out->addModuleStyles( 'ext.backToTopButton.styles' );
     }
 }

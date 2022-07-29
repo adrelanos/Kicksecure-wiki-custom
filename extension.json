@@ -11,12 +11,20 @@
 	"AutoloadClasses": {
 		"Custom": "Custom.php"
 	},
-    "ResourceModules": {
-		"ext.backToTopButton": {
-            "scripts": [
-                "ext.backToTopButton.js"
-            ],
-			"styles": "ext.backToTopButton.css"
+	"ResourceModules": {
+		"ext.BackToTopButton": {
+			"scripts": "ext.BackToTopButton.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		},
+		"ext.BackToTopButton.styles": {
+			"styles": "ext.BackToTopButton.css",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
